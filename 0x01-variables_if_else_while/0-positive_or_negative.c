@@ -5,9 +5,9 @@
 /**
  * main - entry point
  *
- * Description: Positive anything is better than negative nothing
+ * Description: false or true validation
  *
- * Return : 0 (success)
+ * Return: 0 (success)
 */
 
 int main(void)
