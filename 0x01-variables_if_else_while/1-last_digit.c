@@ -2,9 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
-sh: 1: d: not found
-
+/**
+ * main - point
+ *
+ * Description: somthing
+ *
+ * Return: 0 (success)
+*/
 
 int main(void)
 {
@@ -14,10 +18,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	digit = n % 10;
 	if (digit > 5)
-		printf("digit is greater than 5\n", n);
-	else if (digit = 0)
-		printf("digit is 0\n", n);
-	else (digit < 6, digit != 0)
-		printf("digit is less than 6 and not 0 \n",n);
+		printf("Last digit of %i is %i and is greater than 5\n", n, digit);
+	else if (digit == 0)
+		printf("Last digit of %i  is %i and is 0\n", n, digit);
+	else if (digit < 6 && digit != 0)
+		printf("Last digit of %i is %i and is less than 6 and not 0 \n", n, digit);
 	return (0);
 }
+
