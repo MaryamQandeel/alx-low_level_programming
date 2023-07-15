@@ -19,7 +19,8 @@ int main(void)
 		{
 			putchar(',');
 			putchar(' ');
-			digit++;
+		}
+		digit++;
 	}
 	putchar('\n');
 
