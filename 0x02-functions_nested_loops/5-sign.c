@@ -23,5 +23,5 @@ int print_sign(int n)
 	}
 	if (n < 0)
 		_putchar(45);
-	return (-1);	
+	return (-1);
 }
