@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * main - point
+ * print_alphabet - uses  _putchar to print
  *
- * Description: somthif_gdgdgdg
- *
- * Return: 0 (success)
 */
 
 void print_alphabet(void)
