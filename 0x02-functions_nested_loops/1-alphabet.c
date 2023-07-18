@@ -3,7 +3,7 @@
 /**
  * main - point
  *
- * Description: somthing
+ * Description: somthif_gdgdgdg
  *
  * Return: 0 (success)
 */
