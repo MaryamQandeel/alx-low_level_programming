@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - point
@@ -9,15 +8,14 @@
  * Return: 0 (success)
 */
 
-int main(void)
+void print_alphabet(void);
 {	char ch = 'a';
 
 	while (ch <= 'z')
 	{
 		_putchar(ch);
-		putchar('\n');
+		_putchar('\n');
 		ch++;
 	}
 
-	return (0);
 }
