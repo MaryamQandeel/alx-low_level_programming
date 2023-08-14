@@ -1,6 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
-
+#include <stdlib.h>
 #include "main.h"
 #include <stdio.h>
 
@@ -25,9 +25,9 @@ struct dog *my_dog(char *name, float age, char *owner)
 
 	struct dog *my_dog;
 
-	my_dog = malloc(sizeof(dog));
+	my_dog = malloc(sizeof(struct dog));
 	my_dog->name = name;
-	my_dog->age = float;
+	my_dog->age = age;
 	my_dog->owner = owner;
 	return (my_dog);
 }
