@@ -1,8 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
-#include <stdlib.h>
-#include "main.h"
-#include <stdio.h>
+#ifndef DOG
+#define DOG
 
 /**
  * struct dog - dog class
@@ -29,7 +26,5 @@ typedef struct dog dog_t;
 dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
-	return (my_dog);
-}
 
-#endif /*DOG_h*/
+#endif
