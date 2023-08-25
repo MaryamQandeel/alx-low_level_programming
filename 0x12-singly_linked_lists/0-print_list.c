@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * _strlen - length of a string
+ * print_list - function to print the list
  *  print_list - to print the list
- *@s: the string
+ *@h: the string
  * Return: result is (0)
  */
 
