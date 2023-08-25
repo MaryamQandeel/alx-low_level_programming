@@ -3,22 +3,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
 
 /**
- * struct lists_s - singly linked list
- * @str: string - dsds
- * @len: length of string
- * @next: pointer
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
  *
- * description:singly linked list
+ * Description: singly linked list node structure
  */
-
-typedef struct lists_s
+typedef struct list_s
 {
-	char *str;
-	unsigned int len;
-	struct lists_s *next;
-}
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
 
 int _putchar(char c);
 int _strlen(char *s);
