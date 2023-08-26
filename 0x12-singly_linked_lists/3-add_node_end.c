@@ -3,12 +3,12 @@
 #include "lists.h"
 
 /**
- * _strlen - finds the length of a string
+ * _strleng - finds the length of a string
  * @str: string to find the length of
  *
  * Return: length of string
  */
-unsigned int _strlen(char *str)
+unsigned int _strleng(char *str)
 {
 	unsigned int i;
 
@@ -39,7 +39,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(new);
 		return (NULL);
 	}
-	new->len = _strlen(new->str);
+	new->len = _strleng(new->str);
 	new->next = NULL;
 	if (*head == NULL)
 	{
