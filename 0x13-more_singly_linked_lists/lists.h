@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <limits.h>
+#include <string.h>
+#include <stdarg.h>
 
 /**
  * struct listint_s - singly linked list
