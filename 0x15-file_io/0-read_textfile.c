@@ -21,13 +21,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	written = write(STDOUT_FILENO, buf, readme);
 	if (written == -1 || written != readme)
 		return (0);
-  if (filename == NULL)
+	if (filename == NULL)
 		return (0);
-  if (opened == -1)
+	if (opened == -1)
 		return (0);
-  if (readme == -1)
+	if (readme == -1)
 		return (0);
-  if (buf == NULL)
+	if (buf == NULL)
 		return (0);
 	close(opened);
 	free(buf);
