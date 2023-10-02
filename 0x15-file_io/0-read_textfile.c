@@ -12,12 +12,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
     ssize_t bytes;
     char c;
+    
     int openFile = open(filename, O_RDONLY);
-
-    bytes = read(openFile, &c, letters);
-    bytes = write(STDOUT_FILENO, &c, bytes);
     if (filename == NULL | openFile == -1 | !letters)
         return (0);
+    bytes = read(openFile, &c, letters);
+    bytes = write(STDOUT_FILENO, &c, bytes);
     close(openFile);
     return (bytes);
 }
