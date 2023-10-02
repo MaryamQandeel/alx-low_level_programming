@@ -11,13 +11,13 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t bytes;
-	char c;
+	char *c = malloc(letters);
 	int openFile = open(filename, O_RDONLY);
 
 		if (filename == NULL | openFile == -1 | !letters)
 		return (0);
-	bytes = read(openFile, &c, letters);
-	bytes = write(STDOUT_FILENO, &c, bytes);
+	read_bytes = read(openFile, c, letters);
+	write_bytes = write(STDOUT_FILENO, c, read_bytes);
 	close(openFile);
-	return (bytes);
+	return (write_bytes);
 }
